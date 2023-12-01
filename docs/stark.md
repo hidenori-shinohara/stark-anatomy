@@ -48,7 +48,7 @@ Let $\boldsymbol{t}(X) \in (\mathbb{F}_p[X])^\mathsf{w}$ be a list of $\mathsf{w
 
 Translating the conditions for true computational integrity claims to the trace polynomials, one gets:
  - all boundary constraints are satisfied: $\forall (i, w, e) \in \mathcal{B} \, . \, t_w(\omicron^i) = e$; and
- - for all cycles, all transition constraints are satisfied: $\forall i \in \lbrace 0, \ldots, T-1 \rbrace \, . \, \forall j \in \lbrace 0, \ldots, r-1 \rbrace \, . \, p_j( t_0(\omicron^i), \ldots, t_{\mathsf{w}-1}(\omicron^i), t_0(\omicron^{i+1}), \ldots, t_{\mathsf{w}-1}(\omicron^{i+1})) = 0$.
+ - for all cycles, all transition constraints are satisfied: $\forall i \in \lbrace 0, \ldots, T-2 \rbrace \, . \, \forall j \in \lbrace 0, \ldots, r-1 \rbrace \, . \, p_j( t_0(\omicron^i), \ldots, t_{\mathsf{w}-1}(\omicron^i), t_0(\omicron^{i+1}), \ldots, t_{\mathsf{w}-1}(\omicron^{i+1})) = 0$.
 
 The last expression looks complicated. However, observe that the left hand side of the equation corresponds to the univariate polynomial $p_j(t_0(X)), \ldots, t_{\mathsf{w}-1}(X), t_0(\omicron \cdot X), \ldots, t_{\mathsf{w}-1}(\omicron \cdot X))$. The entire expression simply says that all $r$ of these *transition polynomials* evaluate to 0 in $\lbrace  \omicron^i \vert i \in \mathbb{Z}_T\rbrace$.
 
